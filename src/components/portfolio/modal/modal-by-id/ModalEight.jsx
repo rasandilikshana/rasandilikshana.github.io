@@ -2,8 +2,24 @@ import Image from 'next/image';
 import React from 'react';
 import CloseImg from "../../../../../public/assets/img/cancel.svg";
 import PortfolioData from '../../portfolioData';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import img1 from "../../../../../public/assets/img/portfolio/project-12.jpg";
+import img2 from "../../../../../public/assets/img/portfolio/project-13.jpg";
+import img3 from "../../../../../public/assets/img/portfolio/project-14.jpg";
+import img4 from "../../../../../public/assets/img/portfolio/project-15.jpg";
+import img5 from "../../../../../public/assets/img/portfolio/project-16.jpg";
 
 const ModalEight = ({ modalId, setGetModal }) => {
+  let settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    draggable: true,
+  };
   return (
     <div className="modal_portfolio">
       <div
@@ -58,7 +74,27 @@ const ModalEight = ({ modalId, setGetModal }) => {
                 })}
               </div>
               <figure className="modal__img">
-                <Image src={item.image} alt="portfolio project demo" />
+                {/* <Image src={item.image} alt="portfolio project demo" /> */}
+                <Slider {...settings}>
+                    <div>
+                      <Image src={item.image} alt="portfolio project demo" />
+                    </div>
+                    <div>
+                      <Image src={img1} alt="portfolio project demo" />
+                    </div>
+                    <div>
+                      <Image src={img2} alt="portfolio project demo" />
+                    </div>
+                    <div>
+                      <Image src={img3} alt="portfolio project demo" />
+                    </div>
+                    <div>
+                      <Image src={img4} alt="portfolio project demo" />
+                    </div>
+                    <div>
+                      <Image src={img5} alt="portfolio project demo" />
+                    </div>
+                  </Slider>
               </figure>
 
               <button
