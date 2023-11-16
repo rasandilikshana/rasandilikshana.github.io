@@ -22,7 +22,7 @@
 ## 📫 Let's Connect!
 
 - LinkedIn: [Rasan Dilikshana](https://www.linkedin.com/in/rasandilikshana/)
-- Twitter: [Rasan17516802](https://twitter.com/Rasan17516802)
+- Twitter: [@Rasan17516802](https://twitter.com/Rasan17516802)
 - Portfolio: [https://rasandilikshana.me/](https://rasandilikshana.me/)
 
 Feel free to explore my portfolio, and let's connect to discuss exciting opportunities or collaborations. Cheers! 🚀

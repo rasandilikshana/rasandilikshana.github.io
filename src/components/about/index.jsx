@@ -4,7 +4,7 @@ import Education from "./Education";
 import Experience from "./Experience";
 import PersonalInfo from "./PersonalInfo";
 import Skills from "./Skills";
-import cv from "../../../public/assets/img/cv.webp";
+import cv from "../../../public/assets/img/RasanCurriculumVitae.pdf";
 import heroImgMobile from "../../../public/assets/img/hero/img-mobile.png";
 import Image from "next/image";
 
