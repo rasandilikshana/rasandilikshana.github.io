@@ -1,7 +1,7 @@
 # Welcome to my Portfolio! 👋
 
 <p align="center">
-  <img src="https://rasandilikshana.me/assets/img/hero/dark.jpg" alt="Rasan Dilikshana" />
+  <img src="https://rasandilikshana.me/assets/img/hero/img-mobile.png" alt="Rasan Dilikshana" />
 </p>
 
 <p align="center">
