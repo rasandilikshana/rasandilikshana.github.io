@@ -1,6 +1,15 @@
 import Head from "next/head";
 
-const SEO = ({ pageTitle }) => (
+const SEO = ({ pageTitle }) => {
+
+  const analyticsScript = `
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GT7WNNYR9P');
+  `;
+
+  return (
   <>
     <Head>
       <title>
@@ -27,8 +36,11 @@ const SEO = ({ pageTitle }) => (
       <meta name="twitter:description" content="Passionate software engineer in Sri Lanka with expertise in HTML, JavaScript, CSS, React, Laravel, and WordPress. Currently an intern at Zuse Technologies, contributing to innovative projects. Bachelor's degree candidate at the University of Colombo. Skilled in web development with a proven track record of successful projects. Let's connect and bring your ideas to life!" />
       <meta name="twitter:image" content="/assets/img/hero/dark.jpg" />
 
+      {/* Google Analytics */}
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-GT7WNNYR9P"></script>
+      <script dangerouslySetInnerHTML={{ __html: analyticsScript }} />
     </Head>
   </>
-);
+);}
 
 export default SEO;
