@@ -1,2 +1,5 @@
 User-agent: *
 Disallow:
+Disallow: /cgi-bin/
+
+Sitemap: https://rasandilikshana.me/sitemap.xml
