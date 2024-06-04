@@ -27,7 +27,7 @@ const SEO = ({ pageTitle }) => {
       <link rel="icon" href="/favicon.ico" />
 
       {/* Other head elements */}
-      <link rel="canonical" href="https://rasandilikshana.me" />
+      <link rel="canonical" href="https://rasandilikshana.com" />
 
       {/* Schema.org */}
       <script type="application/ld+json">
@@ -37,7 +37,7 @@ const SEO = ({ pageTitle }) => {
               "@type": "Person",
               "name": "Rasan Dilikshana",
               "jobTitle": "Software Developer",
-              "url": "https://rasandilikshana.me/",
+              "url": "https://rasandilikshana.com/",
               "sameAs": [
                 "https://twitter.com/Rasan17516802",
                 "https://www.linkedin.com/in/rasan-dilikshana",
@@ -51,7 +51,7 @@ const SEO = ({ pageTitle }) => {
       <meta property="og:title" content={pageTitle || "Rasan Dilikshana Personal Portfolio"} />
       <meta property="og:description" content={metadescription} />
       <meta property="og:image" content="/assets/img/hero/dark.jpg" />
-      <meta property="og:url" content="https://rasandilikshana.me" />
+      <meta property="og:url" content="https://rasandilikshana.com" />
       <meta property="og:type" content="website" />
 
       {/* Twitter Card meta tags for better Twitter sharing */}

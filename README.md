@@ -1,7 +1,7 @@
 # Welcome to my Portfolio! 👋
 
 <p align="center">
-  <img src="https://rasandilikshana.me/assets/img/hero/img-mobile.png" alt="Rasan Dilikshana" />
+  <img src="https://rasandilikshana.com/assets/img/hero/img-mobile.png" alt="Rasan Dilikshana" />
 </p>
 
 <p align="center">
@@ -23,6 +23,6 @@
 
 - LinkedIn: [Rasan Dilikshana](https://www.linkedin.com/in/rasandilikshana/)
 - Twitter: [@Rasan17516802](https://twitter.com/Rasan17516802)
-- Portfolio: [https://rasandilikshana.me/](https://rasandilikshana.me/)
+- Portfolio: [https://rasandilikshana.com/](https://rasandilikshana.com/)
 
 Feel free to explore my portfolio, and let's connect to discuss exciting opportunities or collaborations. Cheers! 🚀
