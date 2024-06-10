@@ -29,6 +29,7 @@ const index = () => {
                   src={heroImgMobile}
                   className="img-fluid main-img-mobile"
                   alt="about avatar"
+                  priority
                 />
               </div>
               {/* image for mobile menu */}

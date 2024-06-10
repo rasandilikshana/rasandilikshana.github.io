@@ -6,7 +6,7 @@ import AboutMain from "../about";
 import Image from "next/image";
 
 const heroContent = {
-  heroImage: "/assets/img/hero/dark.jpg",
+  heroImage: "/assets/img/hero/rasan-dilikshana.webp",
   heroMobileImage: heroImgMobile,
   heroTitleName: "rasan dilikshana",
   heroDesignation: "Software Engineer",
@@ -33,6 +33,7 @@ const Hero = () => {
               src={heroContent.heroMobileImage}
               className="img-fluid main-img-mobile d-sm-block d-lg-none"
               alt="hero man"
+              priority
               // style={{width:'100%',height:'100%'}}
             />
             <h1 className="text-uppercase poppins-font">
