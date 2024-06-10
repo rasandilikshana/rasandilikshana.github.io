@@ -10,7 +10,7 @@ const heroContent = {
   heroMobileImage: heroImgMobile,
   heroTitleName: "rasan dilikshana",
   heroDesignation: "Software Engineer",
-  heroDescriptions: `I'm a software engineer with a toolbox full of skills, including HTML, CSS, ReactJS, JavaScript, NodeJS, Java, Laravel, Tailwind CSS, ASP.NET, Bootstrap, SQL, and more. Whether it's crafting sleek front-end designs or robust back-end solutions, I'm passionate about building software that enhances user experiences and makes a positive impact.`,
+  heroDescriptions: `I'm a software engineer with a toolbox full of skills, including HTML, CSS, ReactJS, NextJS, JavaScript, NodeJS, Java, Laravel, Search Engine Optimization, Tailwind CSS, ASP.NET, Bootstrap, SQL, and more. Whether it's crafting sleek front-end designs or robust back-end solutions, I'm passionate about building software that enhances user experiences and makes a positive impact.`,
   heroBtn: "more about me",
 };
 

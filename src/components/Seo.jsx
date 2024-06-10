@@ -1,8 +1,8 @@
 import Head from "next/head";
 
 const SEO = ({ pageTitle, metaDescription, metaKeywords }) => {
-  const defaultDescription = "Passionate software engineer in Sri Lanka, skilled in HTML,CSS,React,Laravel and WordPress.Associate at Zuse Technologies.Let's connect,bring your ideas to life";
-  const defaultKeywords = "Rasan Dilikshana, software engineer, web developer, HTML, CSS, React, Laravel, WordPress, Zuse Technologies, personal portfolio, Sri Lanka, web development, software development";
+  const defaultDescription = "Personal portfolio of Rasan Dilikshana, skilled in HTML,CSS,React,Laravel,WordPress,SEO.Associate at Zuse Technologies.Let's connect,bring your ideas to life";
+  const defaultKeywords = "Rasan Dilikshana, software engineer, web developer, HTML, CSS, ReactJs , NextJs, Laravel, WordPress, SEO, Zuse Technologies, personal portfolio, Sri Lanka, web development, software development";
 
   const analyticsScript = `
     window.dataLayer = window.dataLayer || [];
@@ -15,7 +15,7 @@ const SEO = ({ pageTitle, metaDescription, metaKeywords }) => {
     <>
       <Head>
         <title>
-          {pageTitle ? `${pageTitle} - Rasan Dilikshana Personal Portfolio` : "Rasan Dilikshana Personal Portfolio"}
+          {pageTitle}
         </title>
         <meta http-equiv='content-language' content='en-gb'/>
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />

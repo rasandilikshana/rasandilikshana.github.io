@@ -21,20 +21,20 @@ const menuItem = [
 
 const metadata = {
   Home: {
-    title: "Home",
+    title: "Rasan Dilikshana | Passionate Software Engineer in Sri Lanka",
   },
   About: {
-    title: "About Me",
+    title: "About Me | Rasan Dilikshana Personal Portfolio",
     description: "Learn more about Rasan Dilikshana, a software engineer skilled in HTML, CSS, React, Laravel, and WordPress.",
-    keywords: "Rasan Dilikshana, about me, software engineer, skills, HTML, CSS, React, Laravel, WordPress",
+    keywords: "Rasan Dilikshana, about me, software engineer, skills, HTML, CSS, React, Laravel, WordPress, SEO",
   },
   Portfolio: {
-    title: "Portfolio",
+    title: "Portfolio | Rasan Dilikshana Personal Portfolio",
     description: "Explore the portfolio of Rasan Dilikshana, showcasing various projects and works.",
-    keywords: "Rasan Dilikshana, portfolio, projects, web development, software development",
+    keywords: "Rasan Dilikshana, portfolio, projects, web development, software development, search engine optimization",
   },
   Contact: {
-    title: "Contact",
+    title: "Contact | Rasan Dilikshana Personal Portfolio",
     description: "Get in touch with Rasan Dilikshana for discussing new projects, creative ideas, or opportunities.",
     keywords: "Rasan Dilikshana, contact, get in touch, software engineer",
   },
