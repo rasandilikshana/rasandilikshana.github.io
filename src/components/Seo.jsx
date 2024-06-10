@@ -2,7 +2,7 @@ import Head from "next/head";
 
 const SEO = ({ pageTitle }) => {
 
-  const metadescription = `Passionate software engineer in Sri Lanka, skilled in HTML, CSS, React, Laravel, and WordPress. Associate at Zuse Technologies. Let's connect and bring your ideas to life.`;
+  const metadescription = `Passionate software engineer in Sri Lanka, skilled in HTML,CSS,React,Laravel and WordPress.Associate at Zuse Technologies.Let's connect,bring your ideas to life`;
 
   const keywords = `Rasan Dilikshana, software engineer, web developer, HTML, CSS, React, Laravel, WordPress, Zuse Technologies, personal portfolio, Sri Lanka, web development, software development`;
 
