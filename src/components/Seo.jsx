@@ -2,7 +2,9 @@ import Head from "next/head";
 
 const SEO = ({ pageTitle }) => {
 
-  const metadescription = `Passionate software engineer in Sri Lanka, skilled in HTML,CSS,React,Laravel and WordPress.Associate at Zuse Technologies.Let's connect,bring your ideas to life`;
+  const metadescription = `Passionate software engineer in Sri Lanka, skilled in HTML, CSS, React, Laravel, and WordPress. Associate at Zuse Technologies. Let's connect and bring your ideas to life.`;
+
+  const keywords = `Rasan Dilikshana, software engineer, web developer, HTML, CSS, React, Laravel, WordPress, Zuse Technologies, personal portfolio, Sri Lanka, web development, software development`;
 
   const analyticsScript = `
     window.dataLayer = window.dataLayer || [];
@@ -20,6 +22,7 @@ const SEO = ({ pageTitle }) => {
       <meta http-equiv='content-language' content='en-gb'/>
       <meta httpEquiv="x-ua-compatible" content="ie=edge" />
       <meta name="description" content={metadescription} />
+      <meta name="keywords" content={keywords} />
       <meta name="robots" content="index, follow" />
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
