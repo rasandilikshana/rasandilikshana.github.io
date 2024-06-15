@@ -23,6 +23,8 @@ const menuItem = [
 const metadata = {
   Home: {
     title: "Rasan Dilikshana | Passionate Software Engineer in Sri Lanka",
+    description: "Personal portfolio of Rasan Dilikshana, skilled in HTML, CSS, React, Laravel, WordPress, SEO. Associate at Zuse Technologies. Let's connect and bring your ideas to life.",
+    keywords: "Rasan Dilikshana, software engineer Sri Lanka, web developer Sri Lanka, React developer Sri Lanka, Sri Lanka tech portfolio",
   },
   About: {
     title: "About Me | Rasan Dilikshana Personal Portfolio",
