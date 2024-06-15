@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Script from "next/script";
 import { useRouter } from 'next/router';
 
 const SEO = ({ pageTitle, metaDescription, metaKeywords, breadcrumb }) => {
@@ -8,13 +9,6 @@ const SEO = ({ pageTitle, metaDescription, metaKeywords, breadcrumb }) => {
 
   const defaultDescription = "Personal portfolio of Rasan Dilikshana, skilled in HTML, CSS, React, Laravel, WordPress, SEO. Associate at Zuse Technologies. Let's connect and bring your ideas to life.";
   const defaultKeywords = "Rasan Dilikshana, software engineer Sri Lanka, web developer Sri Lanka, React developer Sri Lanka, Sri Lanka tech portfolio";
-
-  const analyticsScript = `
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-GT7WNNYR9P');
-  `;
 
   const breadcrumbSchema = breadcrumb.length === 1
     ? {
@@ -86,11 +80,16 @@ const SEO = ({ pageTitle, metaDescription, metaKeywords, breadcrumb }) => {
         {breadcrumbSchema && (
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
         )}
-
-        {/* Google Analytics */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-GT7WNNYR9P"></script>
-        <script dangerouslySetInnerHTML={{ __html: analyticsScript }} />
       </Head>
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-GT7WNNYR9P"></Script>
+      <Script id="google-analytics" dangerouslySetInnerHTML={{
+        __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-GT7WNNYR9P');
+        `,
+      }} />
     </>
   );
 };

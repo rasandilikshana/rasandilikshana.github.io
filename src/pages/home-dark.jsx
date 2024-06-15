@@ -11,39 +11,17 @@ import Social from "../components/Social";
 import Contact from "../components/Contact";
 import Blog from "../components/blog/Blog";
 import SwitchDark from "../components/switch/SwitchDark";
+import metadata from "../lib/metadata";
 
 const menuItem = [
   { icon: "fa-home", menuName: "Home", path: "/" },
   { icon: "fa-user", menuName: "About", path: "/about" },
   { icon: "fa-briefcase", menuName: "Portfolio", path: "/portfolio" },
   { icon: "fa-envelope-open", menuName: "Contact", path: "/contact" },
-  // { icon: "fa-comments", menuName: "Blog" },
+  // { icon: "fa-comments", menuName: "Blog", path: "/blog" },
 ];
 
-const metadata = {
-  Home: {
-    title: "Rasan Dilikshana | Passionate Software Engineer in Sri Lanka",
-    description: "Personal portfolio of Rasan Dilikshana, skilled in HTML, CSS, React, Laravel, WordPress, SEO. Associate at Zuse Technologies. Let's connect and bring your ideas to life.",
-    keywords: "Rasan Dilikshana, software engineer Sri Lanka, web developer Sri Lanka, React developer Sri Lanka, Sri Lanka tech portfolio",
-  },
-  About: {
-    title: "About Me | Rasan Dilikshana Personal Portfolio",
-    description: "Learn more about Rasan Dilikshana, a software engineer skilled in HTML, CSS, React, Laravel, and WordPress.",
-    keywords: "about Rasan Dilikshana, software engineer Sri Lanka, Sri Lanka web developer, React developer Sri Lanka, tech skills Sri Lanka",
-  },
-  Portfolio: {
-    title: "Portfolio | Rasan Dilikshana Personal Portfolio",
-    description: "Explore the portfolio of Rasan Dilikshana, showcasing various projects and works.",
-    keywords: "Rasan Dilikshana portfolio, web development projects Sri Lanka, software development Sri Lanka, React projects Sri Lanka, tech portfolio Sri Lanka",
-  },
-  Contact: {
-    title: "Contact | Rasan Dilikshana Personal Portfolio",
-    description: "Get in touch with Rasan Dilikshana for discussing new projects, creative ideas, or opportunities.",
-    keywords: "contact Rasan Dilikshana, software engineer contact Sri Lanka, hire web developer Sri Lanka, tech collaboration Sri Lanka, project discussion Sri Lanka",
-  },
-};
-
-const HomeDark = ({ initialTab }) => {
+const HomeDark = ({ initialTab = "Home" }) => {
   const router = useRouter();
   const [activeTab, setActiveTab] = useState(initialTab);
 
@@ -55,7 +33,7 @@ const HomeDark = ({ initialTab }) => {
     setActiveTab(initialTab);
   }, [initialTab]);
 
-  const { title, description, keywords } = metadata[activeTab];
+  const { title, description, keywords } = metadata[activeTab] || {};
 
   const handleTabSelect = (index) => {
     const tab = menuItem[index];
@@ -63,8 +41,8 @@ const HomeDark = ({ initialTab }) => {
     router.push(tab.path);
   };
 
-    // Generate breadcrumbs based on active tab
-    const breadcrumb = activeTab === "Home"
+  // Generate breadcrumbs based on active tab
+  const breadcrumb = activeTab === "Home"
     ? [{ name: "Home", item: "/" }]
     : [
         { name: "Home", item: "/" },
