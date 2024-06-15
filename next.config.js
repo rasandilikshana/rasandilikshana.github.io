@@ -26,7 +26,11 @@ const nextConfig = {
     return config;
   },
 
-  output: 'export', // Add this line to enable static HTML export
+  output: 'export', // Enable static HTML export
+
+  images: {
+    unoptimized: true, // Disable the Image Optimization API
+  },
 
   // Adding security headers
   async headers() {
