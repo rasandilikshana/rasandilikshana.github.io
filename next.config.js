@@ -26,6 +26,8 @@ const nextConfig = {
     return config;
   },
 
+  output: 'export', // Add this line to enable static HTML export
+
   // Adding security headers
   async headers() {
     return [
