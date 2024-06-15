@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
+import { useRouter } from 'next/router';
 import Hero from "../components/hero/Hero";
 import AboutMain from "../components/about";
 import Wrapper from "../layout/wrapper";
@@ -12,10 +13,10 @@ import Blog from "../components/blog/Blog";
 import SwitchDark from "../components/switch/SwitchDark";
 
 const menuItem = [
-  { icon: "fa-home", menuName: "Home" },
-  { icon: "fa-user", menuName: "About" },
-  { icon: "fa-briefcase", menuName: "Portfolio" },
-  { icon: "fa-envelope-open", menuName: "Contact" },
+  { icon: "fa-home", menuName: "Home", path: "/" },
+  { icon: "fa-user", menuName: "About", path: "/about" },
+  { icon: "fa-briefcase", menuName: "Portfolio", path: "/portfolio" },
+  { icon: "fa-envelope-open", menuName: "Contact", path: "/contact" },
   // { icon: "fa-comments", menuName: "Blog" },
 ];
 
@@ -26,37 +27,55 @@ const metadata = {
   About: {
     title: "About Me | Rasan Dilikshana Personal Portfolio",
     description: "Learn more about Rasan Dilikshana, a software engineer skilled in HTML, CSS, React, Laravel, and WordPress.",
-    keywords: "Rasan Dilikshana, about me, software engineer, skills, HTML, CSS, React, Laravel, WordPress, SEO",
+    keywords: "about Rasan Dilikshana, software engineer Sri Lanka, Sri Lanka web developer, React developer Sri Lanka, tech skills Sri Lanka",
   },
   Portfolio: {
     title: "Portfolio | Rasan Dilikshana Personal Portfolio",
     description: "Explore the portfolio of Rasan Dilikshana, showcasing various projects and works.",
-    keywords: "Rasan Dilikshana, portfolio, projects, web development, software development, search engine optimization",
+    keywords: "Rasan Dilikshana portfolio, web development projects Sri Lanka, software development Sri Lanka, React projects Sri Lanka, tech portfolio Sri Lanka",
   },
   Contact: {
     title: "Contact | Rasan Dilikshana Personal Portfolio",
     description: "Get in touch with Rasan Dilikshana for discussing new projects, creative ideas, or opportunities.",
-    keywords: "Rasan Dilikshana, contact, get in touch, software engineer",
+    keywords: "contact Rasan Dilikshana, software engineer contact Sri Lanka, hire web developer Sri Lanka, tech collaboration Sri Lanka, project discussion Sri Lanka",
   },
-  // Add more tabs as needed
 };
 
-const HomeDark = () => {
-  const [activeTab, setActiveTab] = useState("Home");
+const HomeDark = ({ initialTab }) => {
+  const router = useRouter();
+  const [activeTab, setActiveTab] = useState(initialTab);
 
   useEffect(() => {
     document.querySelector("body").classList.remove("rtl");
   }, []);
 
+  useEffect(() => {
+    setActiveTab(initialTab);
+  }, [initialTab]);
+
   const { title, description, keywords } = metadata[activeTab];
+
+  const handleTabSelect = (index) => {
+    const tab = menuItem[index];
+    setActiveTab(tab.menuName);
+    router.push(tab.path);
+  };
+
+    // Generate breadcrumbs based on active tab
+    const breadcrumb = activeTab === "Home"
+    ? [{ name: "Home", item: "/" }]
+    : [
+        { name: "Home", item: "/" },
+        { name: activeTab, item: menuItem.find(item => item.menuName === activeTab)?.path }
+      ];
 
   return (
     <Wrapper>
-      <SEO pageTitle={title} metaDescription={description} metaKeywords={keywords} />
+      <SEO pageTitle={title} metaDescription={description} metaKeywords={keywords} breadcrumb={breadcrumb} />
 
       <div className="yellow">
         <SwitchDark />
-        <Tabs onSelect={(index) => setActiveTab(menuItem[index].menuName)}>
+        <Tabs selectedIndex={menuItem.findIndex(item => item.menuName === activeTab)} onSelect={handleTabSelect}>
           <header className="header">
             <TabList className="icon-menu revealator-slideup revealator-once revealator-delay1">
               {menuItem.map((item, i) => (

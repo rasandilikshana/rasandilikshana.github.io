@@ -2,12 +2,12 @@ import React from "react";
 import Wrapper from "../layout/wrapper";
 import HomeDark from "./home-dark";
 
-const MainRoot = () => {
+const ContactPage = () => {
   return (
     <Wrapper>
-      <HomeDark initialTab="Home" />
+      <HomeDark initialTab="Contact" />
     </Wrapper>
   );
 };
 
-export default MainRoot;
+export default ContactPage;
