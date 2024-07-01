@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 const SEO = ({ pageTitle, metaDescription, metaKeywords, breadcrumb }) => {
   const router = useRouter();
   const baseUrl = "https://rasandilikshana.com";
-  const currentUrl = `${baseUrl}${router.asPath}`;
+  const currentUrl = `${baseUrl}${router.asPath}.html`;
 
   const defaultDescription = "Personal portfolio of Rasan Dilikshana, skilled in HTML, CSS, React, Laravel, WordPress, SEO. Associate at Zuse Technologies. Let's connect and bring your ideas to life.";
   const defaultKeywords = "Rasan Dilikshana, software engineer Sri Lanka, web developer Sri Lanka, React developer Sri Lanka, Sri Lanka tech portfolio";
